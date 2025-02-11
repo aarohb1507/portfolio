@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aaroh's Portfolio</title>
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <script src="./tailwind.config.js"></script>
+</head>
+<body class="overflow-x-hidden">
+  <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
+    <img src="./images/header-bg-color.png" alt="" class="w-full">
+  </div>
+  <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] flex items-center justify-between z-50 mt-3">
+    <img src="./images/logo.png" alt="Logo" class="w-28 cursor-pointer mr-14 ml-4 ">
+    <ul class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full bg-white shadow-sm px-12 py-3 opacity-50">
+      <li><a href="#top" >Home</a></li>
+      <li><a href="#about" >About me</a></li>
+      <li><a href="#services" >Services</a></li>
+      <li><a href="#work" >My Work</a></li>
+      <li><a href="#contact" >Contact me</a></li>
+    </ul>
+    <div class="flex items-center gap-4">
+    <button><img src="./images/moon_icon.png" class="w-6" alt="moon"></button>
+    <a href="#contact" class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4">Contact<img src="./images/arrow-icon.png" class="w-3"></a>
+    <button class="block md:hidden ml-3" onclick="openMenu()">
+      <img src="./images/menu-black.png" alt="" class="w-6 cursor-pointer">
+    </button>
+    </div>
+    <ul id="sideMenu" class="flex flex-col md:hidden -right-64 top-0 bottom-0 w-64 h-screen transition duration-500 bg-rose-50 py-20 px-10 z-50 gap-4 fixed">
+      <div class="absolute right-6 top-6" onclick="closeMenu()">
+        <img src="./images/close-black.png" alt="" class="w-5 cursor-pointer">
+      </div>
+      <li><a href="#top" onclick="closeMenu()" >Home</a></li>
+      <li><a href="#about" onclick="closeMenu()" >About me</a></li>
+      <li><a href="#services" onclick="closeMenu()">Services</a></li>
+      <li><a href="#work" onclick="closeMenu()">My Work</a></li>
+      <li><a href="#contact" onclick="closeMenu()">Contact me</a></li>
+    </ul>
+  </nav>
+  <!---header--->
+  <div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
+    <img src="./images/madara.png" class="rounded-full w-32">
+    <h3 class="flex items-center text-xl md:text-2xl mb-3 gap-2">Hi! I am Aaroh Bhardwaj<img src="./images/hand-icon.png" class="w-6"></h3>
+    <h1 class="text-3xl sm:text-6xl lg:text-[66px]">frontend developer based in Bangalore.</h1>
+    <p class="max-w-2xl mx-auto">I am currently in B.Tech 3rd Year, currently learning work in progress..</p>
+    <div class="flex flex-col sm:flex-row gap-4 mt-4">
+      <a href="#contact" class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2">contact me<img src="./images/right-arrow-white.png" class="w-4"></a>
+      <a href="./images/ynov.gif" download class="px-10 py-3 border rounded-full bg-white border-gray-500 flex items-center gap-2">my resume<img src="./images/download-icon.png" class="w-4"></a>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html> 
